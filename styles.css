@@ -1,0 +1,98 @@
+.grid-game {
+   height: 50vh;
+   padding-top: 10vh;
+   display: grid;
+   grid-template-columns: 12vh 12vh 12vh 12vh;
+   grid-template-rows: 18vh 18vh;
+   justify-content: center;
+}
+
+.organ {
+   border-width: 2px;
+   border-color : black;
+   border-style: dashed;
+   border-radius: 1vh;
+   width: 10vh;
+   height: 16.168vh;
+   float: left;
+   transition: linear 50ms;
+}
+
+.organ-player-selected {
+   background-color: blue;
+}
+
+.organ-cpu-selected {
+   background-color: red;
+}
+
+.organ:hover {
+   opacity : 0.5;
+}
+
+.hand {
+   display: flex;
+   justify-content: center;
+   align-items: last baseline;
+}
+
+.card {
+   border-width: 2px;
+   border-color : red;
+   border-style: solid;
+   border-radius: 1vh;
+   width: 10vh;
+   height: 16.168vh;
+   background-color: blue;
+   transition: linear 50ms;
+}
+
+.card:hover {
+   border-color : black;
+}
+
+#left {
+   transform: rotate(-30deg);
+   z-index: 1;
+}
+
+#left:hover {
+   transform: rotate(-30deg) scale(1.1);
+}
+
+#center {
+   transform: translate(0, -1.5vh);
+   z-index: 2;
+}
+
+#center:hover {
+   transform: scale(1.1) translate(0, -1.5vh);
+}
+
+#right {
+   transform: rotate(30deg);
+   z-index: 1;
+}
+
+#right:hover {
+   transform: rotate(30deg) scale(1.1);
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   overflow: hidden;
+}
+
+nav, footer {
+   margin: 0;
+   padding: 0;
+   height: 10vh;
+}
+
+main {
+   margin : 0;
+   padding: 0;
+   height: 80vh;
+}
